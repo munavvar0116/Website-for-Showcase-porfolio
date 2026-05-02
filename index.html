@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Afterlight Visuals</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Inter, Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 100px 40px;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* LOGO */
+    .logo {
+      width: 160px;
+      height: auto;
+      margin-bottom: 28px;
+      opacity: 0.95;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      color: #b3b3b3;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: #fff;
+      color: #000;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+
+    .hero-desc {
+      margin-top: 22px;
+      max-width: 720px;
+      font-size: 15px;
+      color: #8f8f8f;
+      line-height: 1.6;
+    }
+
+    /* WORK */
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin: 40px 0 10px;
+    }
+
+    .section-desc {
+      max-width: 900px;
+      margin: 0 auto 30px;
+      color: #b3b3b3;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: linear-gradient(180deg, #0a0a0a, #000);
+    }
+
+    .contact-box {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 40px;
+      background: #111;
+      border-radius: 20px;
+      border: 1px solid #222;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 38px;
+      margin-bottom: 16px;
+    }
+
+    .contact-box p {
+      color: #b3b3b3;
+      font-size: 16px;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .contact-details {
+      margin-top: 25px;
+      font-size: 17px;
+    }
+
+    .contact-details a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #444;
+      padding-bottom: 2px;
+    }
+
+    .contact-details a:hover {
+      border-color: #fff;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .logo {
+        width: 120px;
+      }
+
+      section {
+        padding: 80px 20px;
+      }
+
+      .contact-box {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="images/logo.png" alt="Afterlight Visuals Logo" class="logo">
+
+    <h1>Afterlight Visuals</h1>
+    <p>Cinematic Video Editing • Reels • Motion Graphics • Photography</p>
+
+    <div class="buttons">
+      <a href="#work"><button class="btn btn-primary">View Work</button></a>
+      <a href="#contact"><button class="btn btn-outline">Contact</button></a>
+    </div>
+
+    <p class="hero-desc">
+      Explore our work below and get in touch to have your videos edited with precision,
+      creativity, and a cinematic finish tailored to your brand.
+    </p>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <h2>Our Work</h2>
+
+    <h3>Short Form & Reels</h3>
+    <p class="section-desc">
+      A selection of our short-form and reel edits crafted for maximum engagement.
+      We specialize in editing fast-paced, visually compelling reels and short-form content
+      optimized for platforms like Instagram, YouTube Shorts, and social media marketing.
+    </p>
+
+    <div class="video-grid">
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/showreel1.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/showreel2.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/showreel5.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/showreel4.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/xon1.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/xon2.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/showreel3.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/food edit.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/hru1.mp4"></video>
+    </div>
+
+    <h3>YouTube Videos</h3>
+    <p class="section-desc">
+      We also edit long-form YouTube content focused on storytelling and audience retention.
+      Our experience includes gaming videos, vlogs, and creator-driven content with clean pacing,
+      engaging transitions, and professional sound design.
+    </p>
+
+    <div class="video-grid">
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/valo1.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/valo3.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/valo2.mp4"></video>
+      <video autoplay muted loop controls playsinline controlsList="nodownload"><source src="videos/bgmi1.mp4"></video>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-box">
+      <h2>Let’s Work Together</h2>
+      <p>
+        Looking to elevate your content with professional editing?
+        Reach out to us and let’s bring your vision to life.
+      </p>
+
+      <div class="contact-details">
+        <p>📧 Email:
+          <a href="mailto:afterlightvisualswork@gmail.com">
+            afterlightvisualswork@gmail.com
+          </a>
+        </p>
+        <p>📞 Phone: +91 8639525121</p>
+        <p>📸 Instagram:
+          <a href="https://www.instagram.com/afterlight.viz/" target="_blank">
+            @afterlight.viz
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
